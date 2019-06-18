@@ -1,7 +1,7 @@
 import paramiko
 from paramiko import SSHClient
 from scp import SCPClient
-k = paramiko.RSAKey.from_private_key_file("/throwAway.pem")
+k = paramiko.RSAKey.from_private_key_file("/app/key/throwAway.pem")
 c = paramiko.SSHClient()
 c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 print "connecting"
